@@ -57,6 +57,8 @@ function getFirstThreeGroceryItems(groceries) {
 // and returns the modified groceries list
 function deleteThirdItem(groceries) {
   // write your code here...
+  groceries.slice(3, 2);
+  return groceries;
 }
 
 // Step 2:
@@ -64,6 +66,8 @@ function deleteThirdItem(groceries) {
 // and returns the modified groceries array
 function insertItemAtBeginning(groceries, item) {
   // write your code here...
+  groceries.push(item);
+  groceries.slice(-1, groceries.length);
 }
 
 // Step 3:
@@ -71,6 +75,9 @@ function insertItemAtBeginning(groceries, item) {
 // and return the modified groceries array
 function replaceFirstTwoItems(groceries) {
   // write your code here...
+  groceries.push("ketchup");
+  groceries.push("chili");
+  groceries.slice(-2, groceries.length - 1);
 }
 
 // DO NOT CHANGE THE LINE OF CODE BELOW
